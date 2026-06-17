@@ -224,7 +224,7 @@ The mobile SQLite layer scales without issue — it's local per device.
 
 ---
 
-## What I'd improve given more time
+## What I'd improve 
 
 1. **Multipart upload** for files >10MB. The current PUT approach re-sends the full file on any retry. Multipart would resume from the last completed part, critical for slow cellular connections.
 2. **Background upload** using Android WorkManager (`react-native-background-fetch` or a headless task). Currently the scheduler stops when the app is killed.
