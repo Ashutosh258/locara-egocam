@@ -1,7 +1,7 @@
 import { useRef, useState, useCallback, useEffect } from 'react';
-import { Camera, VideoFile } from 'react-native-vision-camera';
+import { Camera, VideoFile, useCameraFormat } from 'react-native-vision-camera';
 import RNFS from 'react-native-fs';
-import uuid from 'react-native-uuid';
+import { v4 as uuidv4 } from 'react-native-uuid';
 import { insertRecording } from '../db/recordings';
 import { buildRecordingRow } from './metadata';
 import { getBatteryLevel } from '../utils/device';
@@ -63,7 +63,7 @@ export function useRecording(workerId: string): RecordingControls {
     try {
       const battery = await getBatteryLevel();
       batteryStartRef.current = battery;
-      videoIdRef.current = uuid.v4() as string;
+      videoIdRef.current = uuidv4() as string;
       startTimeRef.current = new Date();
 
       cameraRef.current.startRecording({

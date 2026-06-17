@@ -6,7 +6,12 @@ import {
   StyleSheet,
   Alert,
 } from 'react-native';
-import { Camera, useCameraDevice, useCameraPermission } from 'react-native-vision-camera';
+import {
+  Camera,
+  useCameraDevice,
+  useMicrophonePermission,
+  useCameraPermission,
+} from 'react-native-vision-camera';
 import { useNavigation } from '@react-navigation/native';
 import { useSessionStore } from '../store/session';
 import { useRecording, MAX_DURATION_SECONDS } from '../camera/useRecording';
