@@ -10,7 +10,7 @@
     "backend": "ts-node backend/server.ts"
   },
   "dependencies": {
-    "react": "18.3.1",
+    "react": "18.2.0",
     "react-native": "0.74.5",
     "@react-navigation/native": "^6.1.10",
     "@react-navigation/native-stack": "^6.9.17",
@@ -32,7 +32,7 @@
     "@aws-sdk/s3-request-presigner": "^3.490.0",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.11.5",
-    "@types/react": "^18.3.1",
+    "@types/react": "^18.2.0",
     "@types/react-native": "^0.74.0",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.19.0",
